@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Jejak Karbon CO2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Jejak Karbon CO2</h1>
+    </header>
+    <main>
+        <section id="kalkulator-listrik">
+            <h2>Kalkulator Listrik (per Bulan)</h2>
+            <form id="form-listrik">
+                <label for="pemakaian-listrik">Pemakaian Listrik (kWh):</label>
+                <input type="number" id="pemakaian-listrik" name="pemakaian-listrik" required>
+                <button type="submit">Hitung Emisi CO2</button>
+            </form>
+            <p id="hasil-listrik"></p>
+        </section>
+
+        <section id="kalkulator-elektronik">
+            <h2>Kalkulator Elektronik</h2>
+            <form id="form-elektronik">
+                <label for="jenis-elektronik">Jenis Elektronik:</label>
+                <select id="jenis-elektronik" name="jenis-elektronik" required>
+                    <option value="laptop">Laptop</option>
+                    <option value="smartphone">Smartphone</option>
+                    <option value="tv">TV</option>
+                    <option value="kulkas">Kulkas</option>
+                </select>
+                <label for="jam-pemakaian">Jam Pemakaian per Hari:</label>
+                <input type="number" id="jam-pemakaian" name="jam-pemakaian" required>
+                <button type="submit">Hitung Emisi CO2</button>
+            </form>
+            <p id="hasil-elektronik"></p>
+        </section>
+
+        <section id="kalkulator-transportasi">
+            <h2>Kalkulator Transportasi</h2>
+            <form id="form-transportasi">
+                <label for="jenis-kendaraan">Jenis Kendaraan:</label>
+                <select id="jenis-kendaraan" name="jenis-kendaraan" required>
+                    <option value="mobil">Mobil</option>
+                    <option value="motor">Motor</option>
+                    <option value="bus">Bus</option>
+                </select>
+                <label for="jarak-tempuh">Jarak Tempuh (km):</label>
+                <input type="number" id="jarak-tempuh" name="jarak-tempuh" required>
+                <button type="submit">Hitung Emisi CO2</button>
+            </form>
+            <p id="hasil-transportasi"></p>
+        </section>
+
+        <section id="riwayat-kalkulasi">
+            <h2>Riwayat Kalkulasi</h2>
+            <ul id="daftar-riwayat"></ul>
+        </section>
+    </main>
+    <script src="kacaeu.js"></script>
+</body>
+</html>
